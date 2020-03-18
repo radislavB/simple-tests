@@ -24,17 +24,15 @@ public class AppTest extends TestCase {
         return new TestSuite(AppTest.class);
     }
 
-    /**
-     * Rigourous Test :-)
-     */
+
     public void testAppA() {
-        System.out.print("AppTest.testAppA");
-        assertTrue(true);
+        System.out.println("System-out : AppTest.testAppA");
+        assertTrue("testAppA error message", false);
     }
 
     public void testAppB() {
-        System.out.print("AppTest.testAppB");
-        assertTrue(true);
+        System.out.println("System-out : AppTest.testAppB");
+        assertEquals(5, 6);
     }
 
     public void testAppC() {
