@@ -27,12 +27,24 @@ public class AppTest extends TestCase {
 
     public void testAppA() {
         System.out.println("System-out : AppTest.testAppA");
-        assertTrue("testAppA error message", false);
+
+        boolean actual = true;
+        String value = System.getProperty("failOther");
+        if (value != null && value.toLowerCase().equals("true")) {
+            actual = false;
+        }
+
+        assertTrue("testAppA error message", actual);
     }
 
     public void testAppB() {
         System.out.println("System-out : AppTest.testAppB");
-        assertEquals(5, 6);
+        int actual = 5;
+        String value = System.getProperty("failOther");
+        if (value != null && value.toLowerCase().equals("true")) {
+            actual = 23;
+        }
+        assertEquals(5, actual);
     }
 
     public void testAppC() {
