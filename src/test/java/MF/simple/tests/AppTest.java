@@ -51,6 +51,15 @@ public class AppTest extends TestCase {
         assertTrue(true);
     }
 
+    public void testAppD() {
+        System.out.println("System-out : AppTest.testAppD");
+
+        String value = System.getProperty("failOther");
+        if (value != null && value.toLowerCase().equals("true")) {
+            throw new RuntimeException("my runtime exception");
+        }
+    }
+
     public void testWillFailOnParameter() {
         String value = System.getProperty("fail");
         if (value != null && value.toLowerCase().equals("true")) {
