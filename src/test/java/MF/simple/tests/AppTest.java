@@ -50,6 +50,10 @@ public class AppTest extends TestCase {
     public void testAppC() {
         assertTrue(true);
     }
+    
+        public void testAppC2() {
+        assertTrue(true);
+    }
 
     public void testAppD() {
         System.out.println("System-out : AppTest.testAppD");
