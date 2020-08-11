@@ -1,8 +1,7 @@
 properties([
                 parameters([
-                        string(name: 'one', defaultValue: ''),
-                        string(name: 'second', defaultValue: ''),
-                        string(name: 'third', defaultValue: ''),
+                        string(name: 'String parameter', defaultValue: 'str'),
+                        boolean(name: 'Boolean parameter', defaultValue: 'true'),
                 ])
         ])
 
