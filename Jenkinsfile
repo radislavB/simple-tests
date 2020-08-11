@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-    properties([
+    options([
   parameters([
     string(name: 'submodule', defaultValue: ''),
     string(name: 'submodule_branch', defaultValue: ''),
