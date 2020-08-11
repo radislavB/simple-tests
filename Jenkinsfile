@@ -1,4 +1,4 @@
-options([
+properties([
                 parameters([
                         string(name: 'one', defaultValue: ''),
                         string(name: 'second', defaultValue: ''),
