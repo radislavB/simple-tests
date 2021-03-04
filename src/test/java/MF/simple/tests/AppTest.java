@@ -42,7 +42,8 @@ public class AppTest extends TestCase {
         int actual = 5;
         String value = System.getProperty("failOther");
         if (value != null && value.toLowerCase().equals("true")) {
-            actual = 23;
+            actual = 23; 
+            
         }
         assertEquals(5, actual);
     }
